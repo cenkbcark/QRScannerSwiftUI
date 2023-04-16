@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		BC1760C329D98E340037C4CB /* QRScannerSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1760C229D98E340037C4CB /* QRScannerSwiftUIApp.swift */; };
-		BC1760C529D98E340037C4CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1760C429D98E340037C4CB /* ContentView.swift */; };
 		BC1760C729D98E350037C4CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1760C629D98E350037C4CB /* Assets.xcassets */; };
 		BC1760CA29D98E350037C4CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1760C929D98E350037C4CB /* Preview Assets.xcassets */; };
+		BC1760D229D98F030037C4CB /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = BC1760D129D98F030037C4CB /* CodeScanner */; };
+		BC1760D529D99A240037C4CB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BC1760D429D99A240037C4CB /* Lottie */; };
+		BC1760D729D99D8B0037C4CB /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1760D629D99D8B0037C4CB /* TabBarView.swift */; };
+		BC1760DB29D99DBF0037C4CB /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1760DA29D99DBF0037C4CB /* QRCodeScannerView.swift */; };
+		BC1760DD29D99DCA0037C4CB /* QRCodeGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1760DC29D99DCA0037C4CB /* QRCodeGeneratorView.swift */; };
+		BC1760E029D9DEA00037C4CB /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1760DF29D9DEA00037C4CB /* Onboarding.swift */; };
+		BC1760E329D9DEE80037C4CB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1760E229D9DEE80037C4CB /* LottieView.swift */; };
+		BC1760E529D9DF790037C4CB /* QRAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1760E429D9DF790037C4CB /* QRAnimation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC1760BF29D98E340037C4CB /* QRScannerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRScannerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1760C229D98E340037C4CB /* QRScannerSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerSwiftUIApp.swift; sourceTree = "<group>"; };
-		BC1760C429D98E340037C4CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC1760C629D98E350037C4CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC1760C929D98E350037C4CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC1760D629D99D8B0037C4CB /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		BC1760DA29D99DBF0037C4CB /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
+		BC1760DC29D99DCA0037C4CB /* QRCodeGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGeneratorView.swift; sourceTree = "<group>"; };
+		BC1760DF29D9DEA00037C4CB /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		BC1760E229D9DEE80037C4CB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		BC1760E429D9DF790037C4CB /* QRAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QRAnimation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1760D229D98F030037C4CB /* CodeScanner in Frameworks */,
+				BC1760D529D99A240037C4CB /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +65,9 @@
 		BC1760C129D98E340037C4CB /* QRScannerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BC1760E429D9DF790037C4CB /* QRAnimation.json */,
+				BC1760D829D99DAD0037C4CB /* Modules */,
 				BC1760C229D98E340037C4CB /* QRScannerSwiftUIApp.swift */,
-				BC1760C429D98E340037C4CB /* ContentView.swift */,
 				BC1760C629D98E350037C4CB /* Assets.xcassets */,
 				BC1760C829D98E350037C4CB /* Preview Content */,
 			);
@@ -65,6 +80,34 @@
 				BC1760C929D98E350037C4CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC1760D829D99DAD0037C4CB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC1760E129D9DEDA0037C4CB /* Onboarding */,
+				BC1760D629D99D8B0037C4CB /* TabBarView.swift */,
+				BC1760D929D99DB50037C4CB /* Screens */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC1760D929D99DB50037C4CB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BC1760DA29D99DBF0037C4CB /* QRCodeScannerView.swift */,
+				BC1760DC29D99DCA0037C4CB /* QRCodeGeneratorView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BC1760E129D9DEDA0037C4CB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BC1760DF29D9DEA00037C4CB /* Onboarding.swift */,
+				BC1760E229D9DEE80037C4CB /* LottieView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,10 @@
 			dependencies = (
 			);
 			name = QRScannerSwiftUI;
+			packageProductDependencies = (
+				BC1760D129D98F030037C4CB /* CodeScanner */,
+				BC1760D429D99A240037C4CB /* Lottie */,
+			);
 			productName = QRScannerSwiftUI;
 			productReference = BC1760BF29D98E340037C4CB /* QRScannerSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +158,10 @@
 				Base,
 			);
 			mainGroup = BC1760B629D98E340037C4CB;
+			packageReferences = (
+				BC1760D029D98F030037C4CB /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				BC1760D329D99A240037C4CB /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = BC1760C029D98E340037C4CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC1760CA29D98E350037C4CB /* Preview Assets.xcassets in Resources */,
+				BC1760E529D9DF790037C4CB /* QRAnimation.json in Resources */,
 				BC1760C729D98E350037C4CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC1760C529D98E340037C4CB /* ContentView.swift in Sources */,
+				BC1760DD29D99DCA0037C4CB /* QRCodeGeneratorView.swift in Sources */,
+				BC1760DB29D99DBF0037C4CB /* QRCodeScannerView.swift in Sources */,
+				BC1760E029D9DEA00037C4CB /* Onboarding.swift in Sources */,
+				BC1760D729D99D8B0037C4CB /* TabBarView.swift in Sources */,
 				BC1760C329D98E340037C4CB /* QRScannerSwiftUIApp.swift in Sources */,
+				BC1760E329D9DEE80037C4CB /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +326,7 @@
 				DEVELOPMENT_TEAM = QHYXVGKS7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your access to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +356,7 @@
 				DEVELOPMENT_TEAM = QHYXVGKS7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your access to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +397,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC1760D029D98F030037C4CB /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		BC1760D329D99A240037C4CB /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC1760D129D98F030037C4CB /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1760D029D98F030037C4CB /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		BC1760D429D99A240037C4CB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1760D329D99A240037C4CB /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC1760B729D98E340037C4CB /* Project object */;
 }
